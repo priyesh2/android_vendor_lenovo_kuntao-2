@@ -847,6 +847,5 @@ PRODUCT_PACKAGES += \
     WfdCommon \
     libts_detected_face_hal \
     libts_face_beautify_hal \
-    com.qualcomm.qti.camera \
     QPerformance \
     UxPerformance
