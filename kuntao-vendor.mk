@@ -833,7 +833,22 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/kuntao/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@2.0.so \
     vendor/lenovo/kuntao/proprietary/vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
 
+PRODUCT_COPY_FILES += \
+    vendor/lenovo/kuntao/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/lenovo/kuntao/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
+    vendor/lenovo/kuntao/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
+    vendor/lenovo/kuntao/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
+    vendor/lenovo/kuntao/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
+    vendor/lenovo/kuntao/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
+    vendor/lenovo/kuntao/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
+    vendor/lenovo/kuntao/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/lenovo/kuntao/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
+    vendor/lenovo/kuntao/proprietary/lib64/libdpmfdmgr.so:system/lib64/libdpmfdmgr.so \
+    vendor/lenovo/kuntao/proprietary/lib64/libdpmframework.so:system/lib64/libdpmframework.so \
+    vendor/lenovo/kuntao/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so
+
 PRODUCT_PACKAGES += \
+    dpmserviceapp \
     libgpustats \
     libtime_genoff \
     libloc_api_v02 \
