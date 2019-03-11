@@ -871,4 +871,7 @@ PRODUCT_PACKAGES += \
     libts_detected_face_hal \
     libts_face_beautify_hal \
     QPerformance \
-    UxPerformance
+    UxPerformance \
+    datastatusnotification \
+    SimSettings \
+    uceShimService
